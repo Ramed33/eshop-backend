@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xx^8d36dco=$^4b34x9gu6&p(-_fj1(8%s98+7glv9llmuuij_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['dsc-ideas.cloud', 'www.dsc-ideas.cloud']
 
 
 # Application definition
@@ -187,4 +187,24 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
+# For production environments False
+CORS_ALLOW_ALL_ORIGINS = False
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://dsc-ideas.cloud',
+    'https://www.dsc-ideas.cloud',
+]
+
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://tudominio.com',
+#     'https://www.tudominio.com',
+#     # If subdomains (ex. herokuapp, render)
+#     'https://*.herokuapp.com',
+# ]
+
+# Ensure that cookies are only sent over HTTPS
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
+# Help Django understand that it's behind an HTTPS proxy
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
