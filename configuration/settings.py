@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xx^8d36dco=$^4b34x9gu6&p(-_fj1(8%s98+7glv9llmuuij_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['dsc-ideas.cloud', 'www.dsc-ideas.cloud']
 
@@ -192,7 +192,7 @@ CORS_ALLOW_ALL_ORIGINS = False
 
 CSRF_TRUSTED_ORIGINS = [
     'https://dsc-ideas.cloud',
-    'https://www.dsc-ideas.cloud',
+    'https://www.dsc-ideas.cloud'
 ]
 
 # CSRF_TRUSTED_ORIGINS = [
@@ -203,8 +203,8 @@ CSRF_TRUSTED_ORIGINS = [
 # ]
 
 # Ensure that cookies are only sent over HTTPS
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
 
 # Help Django understand that it's behind an HTTPS proxy
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
