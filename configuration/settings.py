@@ -29,9 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['dsc-ideas.cloud', 'www.dsc-ideas.cloud']
 
-CSRF_TRUSTED_ORIGINS = [
-    'http://dsc-ideas.cloud/'
-]
+CSRF_TRUSTED_ORIGINS = ['https://dsc-ideas.cloud']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173/",
