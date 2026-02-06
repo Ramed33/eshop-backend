@@ -27,10 +27,18 @@ SECRET_KEY = 'django-insecure-xx^8d36dco=$^4b34x9gu6&p(-_fj1(8%s98+7glv9llmuuij_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['dsc-ideas.cloud', 'www.dsc-ideas.cloud']
 
 CSRF_TRUSTED_ORIGINS = [
-    '*'
+    'http://localhost:5173/',
+    'dsc-ideas.cloud',
+    'www.dsc-ideas.cloud',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://dsc-ideas.cloud",
 ]
 
 
