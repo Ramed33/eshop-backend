@@ -32,8 +32,11 @@ ALLOWED_HOSTS = ['dsc-ideas.cloud', 'www.dsc-ideas.cloud']
 CSRF_TRUSTED_ORIGINS = ['https://dsc-ideas.cloud']
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173'
+    "http://localhost:5173",
+    "http://dsc-ideas.cloud",
 ]
+
+CORS_ALLOW_CREDENTIALS = True
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -57,8 +60,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
