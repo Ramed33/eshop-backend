@@ -33,7 +33,7 @@ CSRF_TRUSTED_ORIGINS = ['https://dsc-ideas.cloud']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "http://dsc-ideas.cloud",
+    "https://dsc-ideas.cloud",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
