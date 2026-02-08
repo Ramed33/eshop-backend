@@ -36,7 +36,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://dsc-ideas.cloud",
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True  # Solo para probar
+# CORS_ALLOW_ALL_ORIGINS = True  # Solo para probar quitar para produccion
 
 CORS_ALLOW_CREDENTIALS = True
 
