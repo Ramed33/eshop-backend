@@ -33,7 +33,7 @@ CSRF_TRUSTED_ORIGINS = ['https://dsc-ideas.cloud']
 
 CORS_ALLOWED_ORIGINS = [
     "https://dsc-ideas.cloud",
-    "https://*.dsc-ideas.cloud",
+    "https://eshop.dsc-ideas.cloud",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True  # Solo para probar quitar para produccion
