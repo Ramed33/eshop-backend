@@ -28,9 +28,9 @@ SECRET_KEY = 'django-insecure-xx^8d36dco=$^4b34x9gu6&p(-_fj1(8%s98+7glv9llmuuij_
 DEBUG = False
 
 ALLOWED_HOSTS = ['dsc-ideas.cloud', 'www.dsc-ideas.cloud',
-                 'eshop.dsc-ideas.cloud', 'www.eshop.dsc-ideas.cloud']
+                 'eshop.dsc-ideas.cloud']
 
-CSRF_TRUSTED_ORIGINS = ['https://dsc-ideas.cloud']
+CSRF_TRUSTED_ORIGINS = ['https://dsc-ideas.cloud', 'https://dsc-ideas.cloud']
 
 CORS_ALLOWED_ORIGINS = [
     "https://eshop.dsc-ideas.cloud",
